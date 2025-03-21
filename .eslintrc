@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+  },
+  "rules": {
+    "eqeqeq": "error", // Enforce strict equality checks
+    "curly": "error", // Require curly braces for control statements
+    "no-var": "error", // Disallow var declarations in favor of let or const
+    "prefer-const": "error", // Suggest const declaration for variables that are never reassigned
+    "no-console": "warn", // Warn when console statements are used (adjust as needed)
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"]
+  }
+}

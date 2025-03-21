@@ -51,6 +51,14 @@
   --font-logo: var(--font-orbitron);
   --font-heading: var(--font-tektur);
   --font-body: var(--font-source-code-pro);
+  --color-black: #030303; /* Black */
+  --color-white: #FAFAFA; /* White */
+  --color-red: #D91656;   /* Red */
+  --color-yellow: #FFEB00; /* Yellow */
+  --color-green: #00FF00; /* Green */
+  --color-cyan: #00FFFF;  /* Cyan */
+  --color-blue: #0000FF;  /* Blue */
+  --color-purple: #FF00FF; /* Purple */
 }
 
 :root {

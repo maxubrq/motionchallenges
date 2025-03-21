@@ -1,15 +1,14 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Logo from './components/logo';
 
 export default function HomePage() {
   return (
     <main className="bg-buried min-h-screen bg-[#030303] text-[#FFEB00]">
       {/* Header */}
       <header className="border-b-2 border-[#FFEB00] p-8">
-        <h1 className="font-logo text-9xl font-bold tracking-tight">
-          100 Motion Challenges
-        </h1>
+        <Logo />
       </header>
 
       {/* Hero Section */}

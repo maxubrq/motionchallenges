@@ -9,7 +9,7 @@ export default function Logo() {
   useEffect(() => {
     let currentIndex = 0;
     let iterations = 0;
-    const maxIterations = 9; // Number of "decode" iterations per character
+    const maxIterations = 3; // Number of "decode" iterations per character
     const characters =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
 

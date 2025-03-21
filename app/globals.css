@@ -48,6 +48,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-logo: var(--font-orbitron);
+  --font-heading: var(--font-tektur);
+  --font-body: var(--font-source-code-pro);
 }
 
 :root {
@@ -126,4 +129,11 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-buried {
+  background-color: #030303;
+  background-image: url('/background/buried.png');
+  background-size: auto;
+  background-position: center;
 }

@@ -21,11 +21,13 @@
     "paths": {
       "@misc": ["./misc"],
       "@components/*": ["./components/*"],
+      "@features/*": ["./app/features/*"],
       "@content/*": ["./content/*"],
       "@hooks/*": ["./hooks/*"],
       "@lib/*": ["./lib/*"],
       "@styles/*": ["./styles/*"],
       "@context/*": ["./context/*"],
+      "@locales/*": ["./locales/*"],
       "@/*": ["./*"]
     }
   },

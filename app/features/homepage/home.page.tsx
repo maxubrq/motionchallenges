@@ -1,5 +1,6 @@
 'use client';
 import { useCurrentLocale } from '@locales/client';
+import CentralDock from '@ui/central-dock';
 import Logo from '@ui/logo';
 import { motion } from 'motion/react';
 import Link from 'next/link';
@@ -37,7 +38,7 @@ export default function HomePage() {
   const pageSlugWithLocale = (slug: string) => `/${locale}/${slug}`;
 
   return (
-    <motion.main className="home-page flex h-screen w-screen flex-col overflow-hidden">
+    <motion.main className="home-page relative flex h-screen w-screen flex-col overflow-hidden">
       <motion.section className="home-page__header flex flex-row items-center justify-between px-12 py-6">
         <Logo className="font-logo font-light" />
         <motion.nav className="home-page__nav" layout>
@@ -62,6 +63,9 @@ export default function HomePage() {
             ))}
           </motion.ul>
         </motion.nav>
+      </motion.section>
+      <motion.section className="home-page__dock-container absolute right-0 bottom-[5rem] left-0 w-full">
+        <CentralDock />
       </motion.section>
     </motion.main>
   );

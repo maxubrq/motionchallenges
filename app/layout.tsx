@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import './globals.css';
 import { ThemeProvider } from '@context/theme.provider';
+import { Toaster } from '@ui/sonner';
 
 const orbitron = localFont({
   src: './fonts/Orbitron/Orbitron-VariableFont_wght.ttf',
@@ -36,6 +37,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Toaster/>
       </body>
     </html>
   );

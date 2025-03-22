@@ -15,19 +15,11 @@ export default function HomePage() {
   } = {
     en: [
       {
-        name: 'Gallery',
-        slug: 'gallery',
-      },
-      {
         name: 'About',
         slug: 'about',
       },
     ],
     vi: [
-      {
-        name: 'Thư viện',
-        slug: 'gallery',
-      },
       {
         name: 'Giới thiệu',
         slug: 'about',
@@ -97,12 +89,7 @@ export default function HomePage() {
             </Tooltip>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button
-                  variant="ghost"
-                  onClick={() =>
-                    handlerThemeChange()
-                  }
-                >
+                <Button variant="ghost" onClick={() => handlerThemeChange()}>
                   <SunMoon />
                 </Button>
               </TooltipTrigger>

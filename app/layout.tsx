@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={` ${orbitron.variable} ${tektur.variable} ${sourceCodePro.variable} bg-buried antialiased`}>
+      <body className={` ${orbitron.variable} ${tektur.variable} ${sourceCodePro.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

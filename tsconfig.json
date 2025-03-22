@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@misc": ["./misc"],
+      "@ui/*": ["./components/ui/*"],
       "@components/*": ["./components/*"],
       "@features/*": ["./app/features/*"],
       "@content/*": ["./content/*"],

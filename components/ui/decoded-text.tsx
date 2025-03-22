@@ -1,9 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
 import { useEffect, useState } from 'react';
 
-export default function Logo() {
-  const finalText = '100 Motion Challenges';
+export type DecodedTextProps = {
+  text: string;
+  className?: string;
+};
+
+export default function DecodedText({
+  text: finalText,
+  className,
+}: DecodedTextProps) {
   const [text, setText] = useState('');
 
   useEffect(() => {
@@ -52,11 +60,5 @@ export default function Logo() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <h1
-      className={`font-logo text-yellow text-9xl font-bold tracking-tight transition-colors duration-1000`}
-    >
-      {text || ' '.repeat(finalText.length)}
-    </h1>
-  );
+  return <h1 className={className}>{text || ' '.repeat(finalText.length)}</h1>;
 }

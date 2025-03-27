@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     '/': ['./features/**/*', './app/features/*'],
   },
-  pageExtensions: ['tsx', 'mdx'],
+  pageExtensions: ['tsx', 'mdx', 'ts'],
 };
 
 export const withMDX = createMDX({

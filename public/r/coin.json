@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "coin",
+  "type": "registry:block",
+  "title": "Coin Component",
+  "description": "Coin component.",
+  "files": [
+    {
+      "path": "registry/coin/coin.tsx",
+      "content": "'use client';\n\nexport default function Coin() {\n  return (\n    <div>\n      <h1>Coin</h1>\n    </div>\n  );\n}",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 'use client';
+import CoinPad from '@/registry/coin/coin-pad';
 import { useChangeLocale, useCurrentLocale } from '@locales/client';
 import { Button } from '@ui/button';
 import Logo from '@ui/logo';
@@ -101,6 +102,11 @@ export default function HomePage() {
             </Tooltip>
           </motion.div>
         </motion.nav>
+      </motion.section>
+      <motion.section className="home-page__content flex flex-1 flex-col items-center justify-center">
+        <motion.div className="w-1/2">
+          <CoinPad />
+        </motion.div>
       </motion.section>
     </motion.main>
   );

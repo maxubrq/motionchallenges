@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+import createMDX from '@next/mdx';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  outputFileTracingIncludes: {
+    '/': ['./features/**/*', './app/features/*'],
+  },
+  pageExtensions: ['tsx', 'mdx'],
 };
 
-export default nextConfig;
+export const withMDX = createMDX({
+  extension: /\.mdx?$/,
+});
+
+export default withMDX({
+  experimental: {
+    mdxRs: true,
+  },
+  ...nextConfig,
+});

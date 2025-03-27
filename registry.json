@@ -10,8 +10,8 @@
       "description": "Coin component.",
       "files": [
         {
-            "path": "registry/coin/coin.tsx",
-            "type":  "registry:component"
+          "path": "registry/coin/coin.tsx",
+          "type": "registry:component"
         }
       ]
     }

@@ -24,7 +24,7 @@ export default class ChallengesService {
 
     const parsedChallenge = ChallengeSchema.safeParse(challenge);
     if (!parsedChallenge.success) {
-       throw new Error('Challenge validation failed');
+      throw new Error('Challenge validation failed');
     }
     return parsedChallenge.data;
   }

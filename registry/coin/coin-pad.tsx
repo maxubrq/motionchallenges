@@ -20,7 +20,7 @@ export default function CoinPad() {
           <Coin rotateY={sliderValue[0]} autoRotate={isEnableAutoRotate} />
         </motion.div>
       </motion.div>
-      <motion.div className="coin-pad__controller flex flex-col items-center justify-center border border-t-2 border-gray-800 px-12 py-6">
+      <motion.div className="coin-pad__controller flex flex-col items-center justify-center border border-t-2 border-gray-800 px-12 py-6 rounded-b-sm">
         <motion.div className="flex w-full flex-row items-center justify-start">
           <Label className="mr-2 w-[10%]">Rotate Y</Label>
           <Slider

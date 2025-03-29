@@ -8,6 +8,7 @@ import { SunMoon } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
+import ChallengesList from './components/challange-list';
 
 type HomePageProps = {
   challenges: Challenge[];
@@ -106,23 +107,20 @@ export default function HomePage({ challenges }: HomePageProps) {
           </motion.div>
         </motion.nav>
       </motion.section>
-      <motion.section className="home-page__content flex flex-1 flex-col items-center justify-center">
-        {challenges.map((challenge) => (
-          <motion.div
-            key={challenge.slug}
-            className="home-page__challenge-card flex w-full max-w-2xl flex-col items-center justify-center rounded-lg border border-gray-600 bg-gray-800 p-4 shadow-lg"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5, type: 'spring' }}
-          >
-            <Link href={`/${locale}/challenges/${challenge.slug}`}>
-              <motion.h2 className="font-heading text-2xl font-bold">
-                {challenge.title}
-              </motion.h2>
-            </Link>
-          </motion.div>
-        ))}
-      </motion.section>
+      <motion.div className="home-page__content-title my-12 flex w-full flex-row items-start justify-start px-12 py-6">
+        <motion.h1
+          className="font-heading text-center text-6xl font-bold text-gray-900 dark:text-gray-100"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {locale === 'en' ? 'Challenges' : 'Thử thách'}
+          <motion.span> {`[${challenges.length}]`}</motion.span>
+        </motion.h1>
+      </motion.div>
+      <motion.div className="flex flex-1 flex-row items-center justify-center">
+        <ChallengesList challenges={challenges} />
+      </motion.div>
     </motion.main>
   );
 }

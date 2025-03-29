@@ -17,7 +17,7 @@ export default function Logo({ className }: LogoProps) {
         whileTap={{ scale: 0.9 }}
         className={cn('inline-block cursor-pointer', className)}
       >
-        100 Motion Challenges
+        Motion Challenges
       </motion.span>
     </Link>
   );

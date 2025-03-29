@@ -8,8 +8,8 @@ export default function Coin(props: CoinProps) {
   const { rotateY, autoRotate } = props;
   const css = `
    .coin__container {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     position: relative;
     transform-style: preserve-3d;
